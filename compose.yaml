@@ -1,0 +1,14 @@
+services:
+  helios:
+    image: docker.io/ptrusr/rofl-helios:latest
+    platform: linux/amd64
+    ports:
+      - "1337:1337"  # Helios RPC port
+    volumes:
+      - helios-data:/root/.helios               # Persistent Helios data storage
+      - /run/rofl-appd.sock:/run/rofl-appd.sock # ROFL appd REST API
+    environment:
+      - INFURA_API_KEY=${INFURA_API_KEY}
+
+volumes:
+  helios-data:
