@@ -1,11 +1,17 @@
 # ROFL Helios
 
-A minimal example of running the [Helios](https://github.com/a16z/helios) Ethereum light client inside a [ROFL (Runtime Off-chain Logic)](https://github.com/oasisprotocol/rofl) container on the Oasis Network.
+A **minimal starter example** of running the [Helios](https://github.com/a16z/helios) Ethereum light client inside a [ROFL (Runtime Off-chain Logic)](https://github.com/oasisprotocol/rofl) container on the Oasis Network.
 
-By running Helios in ROFL:
+This repository serves as a guide to help you get started with deploying your own Helios instance in ROFL.
+
+Benefits of running Helios in ROFL:
 - Provably running inside Intel TDX with cryptographic attestation
 - Ensures privacy of queries and execution
 - Delivers trust-minimized access to verified Ethereum state via RPC
+
+## Live Example
+
+A live deployment on testnet is running at **[https://ethrpc.rofl.cloud](https://ethrpc.rofl.cloud)**. The deployed version is based on this example and can be found at [github.com/ptrus/roflios](https://github.com/ptrus/roflios).
 
 ## Prerequisites
 
